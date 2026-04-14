@@ -179,7 +179,7 @@
                 
                 <div class="social-mini-icons">
                     <a href="https://tiktok.com/@ase.m7"><i class="fab fa-tiktok"></i></a>
-                    
+                   
                     <a href="https://snapchat.com/t/wfcSQVlH"><i class="fab fa-snapchat"></i></a>
                 </div>
             </div>
@@ -221,6 +221,18 @@
             <a href="#" class="my-rights">   عاصم</a>
         </div>
     </div>
+    
+<script>
+    // منع الزر الأيمن للفأرة
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // منع اختصارات لوحة التحكم (F12 و Ctrl+Shift+I)
+    document.onkeydown = function(e) {
+        if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))) {
+            return false;
+        }
+    }
+</script>
 
 </body>
 </html>
